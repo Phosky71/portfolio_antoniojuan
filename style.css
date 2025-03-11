@@ -1,0 +1,202 @@
+body {
+    background-color: #2C2C2C; /* Gris oscuro suave */
+    color: #E0E0E0; /* texto principal */
+}
+
+.navbar, footer {
+    background-color: #22223B !important; /* Azul-gris oscuro más suave */
+}
+
+.card {
+    background-color: #4A4E69 !important; /* Gris azulado suave para tarjetas */
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background-color: #2C2C2C !important; /* Fondo gris carbón más suave para modales */
+}
+
+/* Estilo general de las tarjetas */
+.project-card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+/* Imagen del proyecto */
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay para mostrar texto al pasar el ratón */
+.project-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-hover-overlay {
+    opacity: 1; /* Aparece al hacer hover */
+}
+
+/* Texto dentro del overlay */
+.project-hover-overlay span {
+    color: #ffffff; /* Texto blanco */
+    font-size: 1.2rem; /* Tamaño del texto */
+}
+
+/* Espaciado general dentro del modal */
+.modal-body h6 {
+    margin-bottom: 15px; /* Espacio debajo de los títulos */
+}
+
+.modal-body p {
+    margin-bottom: 20px; /* Espacio debajo de los párrafos */
+}
+
+.modal-body img {
+    margin-bottom: 25px; /* Espacio debajo de las imágenes */
+}
+
+/* Botones con separación adicional */
+.modal-body .d-flex.gap-3 {
+    gap: 15px; /* Espaciado horizontal entre botones */
+    margin-bottom: 20px; /* Espaciado vertical debajo del grupo de botones */
+}
+
+/* Imagen de la aplicación móvil */
+.modal-body img {
+    border: 2px solid #444; /* Borde alrededor de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Centrar imágenes dentro del modal */
+.modal-body img[alt='Vista previa de la aplicación Flutter'] {
+    max-width: 75%; /* Reducir tamaño de la imagen móvil */
+    display: block;
+    margin: 0 auto; /* Centrar imagen */
+}
+
+/* Estilo general para la nube de palabras */
+.word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.word-cloud span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover en las palabras */
+.word-cloud span:hover {
+    transform: scale(1.2);
+    background-color: #555;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to bottom, #1c1c1c, #2c2c2c);
+    color: #fff;
+    padding-top: 100px; /* Para compensar la barra fija */
+    text-align: center;
+    height: 100vh;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .nav-link {
+    margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #f8d210; /* Color de acento */
+}
+
+#sobre-mi img {
+    border: 3px solid #555;
+}
+
+#sobre-mi p {
+    font-size: 1.2rem;
+}
+
+#sobre-mi ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#sobre-mi .btn {
+    padding: 10px 20px;
+}
+
+html {
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+
+css
+#sobre-mi img {
+    width: 200px; /* Aumenta el tamaño de la imagen */
+    height: 200px; /* Mantén proporciones cuadradas */
+    object-fit: cover; /* Asegura que la imagen se ajuste al espacio */
+    border: 5px solid #555; /* Añade un borde sutil */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+#sobre-mi p {
+    font-size: 1.2rem;
+}
+
+#sobre-mi ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#sobre-mi .btn {
+    padding: 10px 20px;
+}
